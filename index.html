@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Please Don't Go</title>
+  <meta name="author" content="Thomas Vaeth">
+  <meta name="description" content="Please Don't Go is a JavaScript plugin used for changing the title and the favicon of the website when a visitor navigates to another tab in the window.">
+  <meta property="og:title" content="Please Don't Go">
+  <meta property="og:url" content="http://thomasvaeth.com/pleaseDontGo">
+  <meta property="og:site_name" content="Please Don't Go">
+  <meta property="og:description" content="Please Don't Go is a JavaScript plugin used for changing the title and the favicon of the website when a visitor navigates to another tab in the window.">
+  <meta property="og:image" content="http://thomasvaeth.com/pleaseDontGo/images/pleaseDontGo.jpg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="Please Don't Go is a JavaScript plugin used for changing the title and the favicon of the website when a visitor navigates to another tab in the window.">
+  <meta name="twitter:title" content="Please Don't Go">
+  <meta name="twitter:url" content="http://thomasvaeth.com/pleaseDontGo">
+  <meta name="twitter:site" content="Please Don't Go">
+  <meta name="twitter:creator" content="@thomasvaeth">
+  <meta name="twitter:domain" content="http://thomasvaeth.com">
+  <meta property="twitter:image" content="http://thomasvaeth.com/pleaseDontGo/images/pleaseDontGo.jpg">
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.min.css">
+</head>
+<body>
+
+  <main class="👋">
+
+  <section>
+    <div>
+      <h1>Please Don’t Go</h1>
+      <p>A JavaScript plugin used for changing the title and the favicon of the website when a visitor navigates to another tab in the window.</p>
+      <a href="https://github.com/thomasvaeth/pleaseDontGo">Download on Github</a>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <ul>
+      <li><a class="fa fa-lg fa-envelope-o" href="mailto:thomas.vaeth@gmail.com"></a></li>
+      <li><a class="fa fa-lg fa-github" href="https://github.com/thomasvaeth" target="_blank"></a></li>
+      <li><a class="fa fa-lg fa-codepen" href="http://codepen.io/thomasvaeth/" target="_blank"></a></li>
+      <li><a class="fa fa-lg fa-linkedin" href="https://www.linkedin.com/in/thomasvaeth" target="_blank"></a></li>
+      <li><a class="fa fa-lg fa-twitter" href="https://twitter.com/thomasvaeth" target="_blank"></a></li>
+      <li><a class="fa fa-lg fa-facebook" href="https://www.facebook.com/thomas.vaeth" target="_blank"></a></li>
+      <li><a class="fa fa-lg fa-instagram" href="https://www.instagram.com/thomas.vaeth/" target="_blank"></a></li>
+    </ul>
+  </footer>
+
+  <script type="text/javascript" src="js/pleaseDontGo.min.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      pleaseDontGo.init({
+        newTitle: 'Baby Please',
+        newFavicon: 'images/favicon-dontgo.ico',
+        timeout: 1500
+      });
+    });
+  </script>
+</body>
+</html>
