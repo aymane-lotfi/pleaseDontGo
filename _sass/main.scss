@@ -14,6 +14,15 @@ $mq-lg: 64em;
 $mq-xl: 76.5em;
 $mq-xxl: 114em;
 
+@mixin nth-animation-delay($items: 15, $time: 0.1s) {
+  @for $i from 1 through $items {
+    
+    &:nth-child(#{$i}) {   
+      animation-delay: $time * $i; 
+    }
+  }
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -93,6 +102,7 @@ h1 {
   font-family: $font-header;
   font-size: $fontSize;
   line-height: 1.1;
+  overflow: hidden;
 
   @media (min-width: $mq-sm) {
     font-size: $fontSize + 0.5em;
@@ -101,6 +111,14 @@ h1 {
   @media (min-width: $mq-md) {
     font-size: $fontSize + 1em;
   }
+}
+
+span {
+  @include nth-animation-delay();
+
+  display: inline-block;
+
+  animation: spanTitle 0.75s ease-in-out both;
 }
 
 p {
@@ -136,4 +154,10 @@ ul {
   a {
     color: $color-black;
   }
+}
+
+@keyframes spanTitle {
+  0% { opacity: 0; transform: translate3d(0, 100%, 0); }
+  90% { opacity: 1; }
+  100% { transform: translate3d(0, 0, 0); }
 }
