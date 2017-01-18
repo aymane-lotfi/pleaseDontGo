@@ -63,6 +63,17 @@
         newFavicon: 'images/favicon-dontgo.ico',
         timeout: 1500
       });
+
+      var header = document.getElementsByTagName('h1')[0];
+      var array = header.innerHTML.split('');
+      header.innerHTML = '';
+      array.forEach(function(idx) {
+        if (idx !== ' ') {
+          header.innerHTML += '<span>' + idx + '</span>';
+        } else {
+          header.innerHTML += '<span>&nbsp;</span>';
+        }
+      });
     });
   </script>
 </body>
