@@ -67,7 +67,6 @@ body {
 }
 
 div {
-  max-width: $mq-md;
   margin: 0 auto;
   padding: 1em;
 
@@ -122,6 +121,9 @@ span {
 }
 
 p {
+  max-width: $mq-md;
+  margin: 0 auto;
+
   font-size: 1.1em;
   color: $color-black;
 }
